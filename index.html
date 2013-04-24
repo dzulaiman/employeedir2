@@ -15,6 +15,15 @@
 <script src="js/storage/memory-store.js"></script>
 <script src="js/main.js"></script>
 
-
+<script id="home-tpl" type="text/x-handlebars-template"></script>
+  <div class="header"><h1>Home</h1></div>
+  <div class="search-bar"><input class="search-key" type="text"></div>
+  <ul class="employee-list"></ul>
+</script>
+<script id="employee-li-tpl" type="text/x-handlebars-template"></script>
+  {{#.}}
+  <li><a href="#employees/{{this.id}}">{{this.firstName}} {{this.lastName}} <br/> {{this.title}}</a></li>
+  {{/.}}
+</script>
 </body>
 </html>
