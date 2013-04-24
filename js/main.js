@@ -36,8 +36,9 @@ var app = {
 	initialize: function() {
 		var self = this;
 		this.store = new MemoryStore(function() {
-			//self.renderHomeView();
-			self.showAlert('Store Initialized', 'Info');
+		//	self.renderHomeView();
+			self.showAlert('Store Initialized', 'Makluman');
+			self.renderHomeView();
 		});
 		$('.search-key').on('keyup', $.proxy(this.findByName, this));
 	}
