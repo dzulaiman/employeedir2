@@ -7,7 +7,7 @@ var app = {
 	else {
 			alert(title ? (title + ": " + message) : message);
 			}
-	},
+	};
 	
 	initialize: function() {
 		var self = this;
@@ -19,7 +19,7 @@ var app = {
 		//this.homeTpl = Handlebars.compile($("#home-tpl").html());
 		//this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
 		//$('.search-key').on('keyup', $.proxy(this.findByName, this));
-	}
+	};
 
 };
 
