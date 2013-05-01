@@ -7,7 +7,7 @@ var app = {
 	else {
 			alert(title ? (title + ": " + message) : message);
 			}
-	};
+	},
 	
 	initialize: function() {
 		var self = this;
